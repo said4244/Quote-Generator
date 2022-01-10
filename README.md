@@ -1,0 +1,2 @@
+# Quote-Generator
+Quote Generator is a web application that fetches quotes from an API and generates a random chosen quote with its author every time you click the new-quote button. There's also an option to tweet the shown quote with its author with the tweet button. This web application was part of my Javascript training. I've got my hands dirty with async functions, fetching data from an API, displaying this data on an html page and some error handling.
