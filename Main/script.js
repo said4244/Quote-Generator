@@ -55,8 +55,7 @@ async function getQuotes() {
     const response = await fetch(apiURL); // this mean that constant response will not be populated until it has some data fethced from our API
     // we need to use async and await in this situation, or else it will try to set the response before it had the chance to fetch the data and that would cause an error
     apiQuotes = await response.json(); //the global variable will now wait till it gets the data and we decode it into json to make it readeble
-    //JSON stands for JavaScript Object Notation, JSON is a lightweight format for storing and transporting data, JSON is often used when data is sent from a server to a web page
-    
+
     //console.log(apiQuotes)  //test all quotes
     //console.log(apiQuotes[12]) //test one specifec quote
     newQuote();
@@ -87,7 +86,3 @@ twitterBtn.addEventListener('click', tweetQuote) // this'll run tweetQuote() whe
 getQuotes();
 
 //loading() //test
-
-//now everytime we reload our page and take a look in our console we'll see that a new quote is generated
-// the only thing we need to do now is to get this quote in our #quote and the author in the #author
-// try to do the same but with a local array in the js file instead of the API
